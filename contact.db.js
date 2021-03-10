@@ -33,7 +33,7 @@ function update(contact, callback) {
 }
 
 function remove(contactid, callback) {
-    const contact = contacts.find(c => c.id === cocontactid);
+    const contact = contacts.find(c => c.id === contactid);
     phones.splice(contacts.indexOf(contact), 1);
     callback(null, true);
 }
